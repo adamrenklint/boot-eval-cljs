@@ -1,5 +1,5 @@
 (def project 'adamrenklint/boot-eval-cljs)
-(def version "1.0.0")
+(def version "1.1.0")
 
 (set-env!
  :source-paths #{"src"}
@@ -40,7 +40,7 @@
 
 (deftask test []
   (merge-env! :source-paths #{"test"})
-  (eval-cljs :main 'adamrenklint.boot-eval-cljs-test/main))
+  (eval-cljs :fn 'adamrenklint.boot-eval-cljs-test/main))
 
 (task-options!
   pom {:project     project

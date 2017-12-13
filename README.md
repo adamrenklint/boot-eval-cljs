@@ -7,7 +7,7 @@ Boot task to compile ClojureScript function and evaluate in Node.js
 )](https://circleci.com/gh/adamrenklint/boot-eval-cljs)
 
 ```clojure
-[adamrenklint/boot-eval-cljs "1.0.0"] ;; latest release
+[adamrenklint/boot-eval-cljs "1.1.0"] ;; latest release
 ```
 
 ## Usage
@@ -19,10 +19,10 @@ Add `boot-eval-cljs` to your `build.boot` dependencies and require the `eval-clj
 (require '[adamrenklint.boot-eval-cljs :refer [eval-cljs]])
 ```
 
-Now you can use the task from the command line. Assuming `print-hello-world` is a function in the `foo.bar` namespace, just run the task with the `-m` option:
+Now you can use the task from the command line. Assuming `print-hello-world` is a function in the `foo.bar` namespace, just run the task with the `-f` option:
 
 ```
-> boot eval-cljs -m foo.bar/print-hello-world
+> boot eval-cljs -f foo.bar/print-hello-world
 ```
 
 Or use the `eval-cljs` task as a building block when composing other tasks:
@@ -30,13 +30,13 @@ Or use the `eval-cljs` task as a building block when composing other tasks:
 ```clojure
 (deftask dev []
   (comp (watch)
-        (eval-cljs :main 'foo.bar/print-hello-world)))
+        (eval-cljs :fn 'foo.bar/print-hello-world)))
 ```
 
 ## Options
 
 ```
--m, --main   SYM  Required symbol for function to evaluate
+-f, --fn  FUNCTION  Symbol for function to evaluate
 ```
 
 ## License

@@ -1,9 +1,9 @@
 # Changelog
 
-## v1.0.1 - 2017-12-12
+## v1.1 - 2017-12-13
 
-- Fixed issue with `dir` option not working
+- Renamed option to `fn`
 
-## v1.0.0 - 2017-12-11
+## v1 - 2017-12-13
 
 - Initial release
