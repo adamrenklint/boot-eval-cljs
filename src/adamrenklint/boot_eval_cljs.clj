@@ -13,7 +13,7 @@
   (not (.exists (io/file "./target/node_modules/source-map-support/package.json"))))
 
 (core/deftask eval-cljs
-  "Compile ClojureScript function and evaluate in Node.js"
+  "Compile a ClojureScript function and evaluate in Node.js"
   [f fn FUNCTION sym "Symbol for function to evaluate"]
   (assert fn "Must provide symbol for function to evaluate")
   (let [ns (namespace fn)
