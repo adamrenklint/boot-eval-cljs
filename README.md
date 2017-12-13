@@ -7,7 +7,7 @@ Boot task to compile a ClojureScript function and evaluate in Node.js
 )](https://circleci.com/gh/adamrenklint/boot-eval-cljs)
 
 ```clojure
-[adamrenklint/boot-eval-cljs "1.1.0"] ;; latest release
+[adamrenklint/boot-eval-cljs "1.1.1"] ;; latest release
 ```
 
 ## Usage

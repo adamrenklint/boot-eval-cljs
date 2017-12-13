@@ -1,5 +1,5 @@
 (def project 'adamrenklint/boot-eval-cljs)
-(def version "1.1.0")
+(def version "1.1.1")
 
 (set-env!
  :source-paths #{"src"}
