@@ -1,6 +1,6 @@
 # boot-eval-cljs
 
-Boot task to compile ClojureScript function and evaluate in Node.js
+Boot task to compile a ClojureScript function and evaluate in Node.js
 
 [![Clojars Project](https://img.shields.io/clojars/v/adamrenklint/boot-eval-cljs.svg?style=flat-square
 )](https://clojars.org/adamrenklint/boot-eval-cljs) [![CircleCI](https://img.shields.io/circleci/project/github/adamrenklint/boot-eval-cljs.svg?style=flat-square
