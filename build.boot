@@ -45,7 +45,7 @@
 (task-options!
   pom {:project     project
        :version     version
-       :description "Boot task to compile ClojureScript function and evaluate in Node.js"
+       :description "Boot task to compile a ClojureScript function and evaluate in Node.js"
        :url         "https://github.com/adamrenklint/boot-eval-cljs"
        :scm         {:url "https://github.com/adamrenklint/boot-eval-cljs"}
        :license     {"MIT" "https://github.com/adamrenklint/boot-eval-cljs/blob/master/LICENSE"}})
