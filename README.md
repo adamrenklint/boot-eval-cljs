@@ -7,7 +7,7 @@ Boot task to compile a ClojureScript function and evaluate in Node.js
 )](https://circleci.com/gh/adamrenklint/boot-eval-cljs)
 
 ```clojure
-[adamrenklint/boot-eval-cljs "1.1.1"] ;; latest release
+[adamrenklint/boot-eval-cljs "1.2.0"] ;; latest release
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ Boot task to compile a ClojureScript function and evaluate in Node.js
 Add `boot-eval-cljs` to your `build.boot` dependencies and require the `eval-cljs` task:
 
 ```clojure
-(set-env! :dependencies '[[adamrenklint/boot-eval-cljs "1.0.0"]])
+(set-env! :dependencies '[[adamrenklint/boot-eval-cljs "1.2.0"]])
 (require '[adamrenklint.boot-eval-cljs :refer [eval-cljs]])
 ```
 
@@ -30,13 +30,16 @@ Or use the `eval-cljs` task as a building block when composing other tasks:
 ```clojure
 (deftask dev []
   (comp (watch)
-        (eval-cljs :fn 'foo.bar/print-hello-world)))
+        (eval-cljs :fn 'foo.bar/print-hello-world
+                   :compiler-options {:verbose true})))
 ```
 
 ## Options
 
 ```
--f, --fn  FUNCTION  Symbol for function to evaluate
+-f, --fn FN                  sym  Symbol for function to evaluate
+-c, --compiler-options OPTS  edn  Options to pass to the ClojureScript compiler
+
 ```
 
 ## License
