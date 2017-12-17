@@ -7,7 +7,7 @@ Boot task to compile a ClojureScript function and evaluate in Node.js
 )](https://circleci.com/gh/adamrenklint/boot-eval-cljs)
 
 ```clojure
-[adamrenklint/boot-eval-cljs "1.2.0"] ;; latest release
+[adamrenklint/boot-eval-cljs "1.2.1"] ;; latest release
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ Boot task to compile a ClojureScript function and evaluate in Node.js
 Add `boot-eval-cljs` to your `build.boot` dependencies and require the `eval-cljs` task:
 
 ```clojure
-(set-env! :dependencies '[[adamrenklint/boot-eval-cljs "1.2.0"]])
+(set-env! :dependencies '[[adamrenklint/boot-eval-cljs "1.2.1"]])
 (require '[adamrenklint.boot-eval-cljs :refer [eval-cljs]])
 ```
 

@@ -25,7 +25,7 @@
   (assert fn "Must provide symbol for function to evaluate")
   (let [ns (namespace fn)
         name (string/replace ns "-" "_")
-        dir "target/eval-cljs"]
+        dir "target"]
     (comp (cljs-edn :edn name
                     :require [(symbol ns)]
                     :init-fns [fn]
